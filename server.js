@@ -41,4 +41,6 @@ app.use((request, response) => {
   logger.getErrorLog(url);
 });
 
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log(`Serwer dziala na http://localhost:${PORT}`);
+});
